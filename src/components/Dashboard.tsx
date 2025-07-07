@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 export default function Dashboard() {
   const location = useLocation();
-  const isEmbedded = location.pathname.startsWith('/products');
+  const isEmbedded = location.pathname.startsWith("/products");
 
   return (
     <div className="p-6">
@@ -18,9 +18,12 @@ export default function Dashboard() {
       </div>
 
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-gray-900">Product Configuration Dashboard</h1>
+        <h1 className="text-3xl font-bold text-gray-900">
+          Product Configuration Dashboard
+        </h1>
         <p className="text-gray-600 mb-4">
-          Create and manage insurance products, pricing rules, and eligibility criteria
+          Create and manage insurance products, pricing rules, and eligibility
+          criteria
         </p>
       </div>
 
@@ -47,7 +50,7 @@ export default function Dashboard() {
       {/* Product list */}
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Insurance Products</h2>
-        
+
         <div className="bg-white border rounded-lg p-4">
           <div className="flex justify-between items-start">
             <div>
@@ -55,7 +58,9 @@ export default function Dashboard() {
               <p className="text-gray-600">Comprehensive health coverage</p>
               <p className="text-sm text-gray-500">Base Premium: $450/month</p>
             </div>
-            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Active</span>
+            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">
+              Active
+            </span>
           </div>
         </div>
 
@@ -66,7 +71,9 @@ export default function Dashboard() {
               <p className="text-gray-600">20-year term life insurance</p>
               <p className="text-sm text-gray-500">Base Premium: $75/month</p>
             </div>
-            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Active</span>
+            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">
+              Active
+            </span>
           </div>
         </div>
 
@@ -77,7 +84,9 @@ export default function Dashboard() {
               <p className="text-gray-600">Comprehensive auto insurance</p>
               <p className="text-sm text-gray-500">Base Premium: $120/month</p>
             </div>
-            <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Under Review</span>
+            <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">
+              Under Review
+            </span>
           </div>
         </div>
       </div>

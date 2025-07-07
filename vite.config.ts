@@ -23,7 +23,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3004,
+    port: 3003,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
